@@ -206,6 +206,13 @@ class AmmoFileGenerator
             $headers_list['Accept-Language'] = "{$faker->locale};q=0.8,{$faker->locale};q=0.6";
         }
 
+        $request_type_config = $this->getRequestTypes();
+        $request_type_config = $request_type_config[$request_type];
+
+        if (isset($request_type_config['headers_callback']) && is_callable($request_type_config['headers_callback'])) {
+            $request_type_config['headers_callback']($faker, $headers_list);
+        }
+
         $ammo = '';
 
         foreach ($headers_list as $header_name => $header_value) {
