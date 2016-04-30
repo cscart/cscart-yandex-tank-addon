@@ -1,5 +1,5 @@
 # cscart-yandex-tank-addon
-Generate configuration for Yandex.Tank to benchmark performance of your site
+Generate configuration for Yandex.Tank to benchmark performance of your site.
 
 ## Usage (CLI)
 
