@@ -1,4 +1,4 @@
-# cscart-yandex-tank-addon
+# Yandex.Tank Payload Generator for CS-Cart Benchmarking
 Generate configuration for Yandex.Tank to benchmark performance of your site.
 
 ## Usage (CLI)
